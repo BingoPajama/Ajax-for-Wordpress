@@ -12,7 +12,7 @@ function filter_ajax(){
 		 
 		 $args=array(
 				         'post_type'=>'classroom',
-						 'posts_per_page'=>'-1'
+						 'posts_per_page'=> -1
 				  );
 				  
 				  if(isset($category)) {
