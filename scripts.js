@@ -10,7 +10,7 @@
 				data: { action: 'filter', category: category },
 				type: 'post',
 				success: function (result) {
-					$('.js-filter').html(result);
+					$('.content').html(result);
 				},
 					
 					error: function(result) {
