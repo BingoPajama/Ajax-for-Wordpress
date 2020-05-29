@@ -8,7 +8,7 @@
 		    $.ajax({
 				url: wpAjax.ajaxUrl,
 				data: { action: 'filter', category: category },
-				type: 'post',
+				type: 'classroom',
 				success: function (result) {
 					$('.content').html(result);
 				},
