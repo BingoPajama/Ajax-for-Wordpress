@@ -1,14 +1,15 @@
 (function ($) {
 
    $(document).ready(function() {
-	   $(document).on ('click' , '.content' , function(e) {
+	   $(document).on ('click' , '.js-filter-item a' , function(e) {
 		   e.preventDefault();
 		   
 		   var category= $(this).data('category');
+		   
 		    $.ajax({
 				url: wpAjax.ajaxUrl,
 				data: { action: 'filter', category: category },
-				type: 'classroom',
+				type: 'post',
 				success: function (result) {
 					$('.content').html(result);
 				},
