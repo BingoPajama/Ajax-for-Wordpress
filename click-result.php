@@ -8,9 +8,7 @@ function filter_ajax(){
 	     
 		 
 			 
-         $category = $_POST['category'];   
-         
-		 
+         $category = $_POST['category'];   		 
 		 
 		 $args=array(
 				         'post_type'=>'classroom',
@@ -25,6 +23,8 @@ function filter_ajax(){
 					
 					  
 				  }
+				  
+				  
 				  				  
 				  
 				  $query = new WP_Query($args);
@@ -35,7 +35,7 @@ function filter_ajax(){
 					
 					
 
-						
+						<!---------click result------->
 												
 									
 					<div class="posts-boxes">
@@ -51,24 +51,6 @@ function filter_ajax(){
 					  </div>
 												 
 				    </div>
-					<div class="echo-box">
-					      <?php
-                            $terms = get_categories('classroom');
-
-                                     foreach ( $terms as $term ) {
-                                     echo $term->name.'<br />';
-                                     }
-                           ?>
-						       
-					</div>
-
-					
-					
-					<div class="echo-box-2"><?php echo var_dump ($category); ?>
-					
-					
-					
-					</div>
 				  
 				    <?php endwhile;
 				          endif;
