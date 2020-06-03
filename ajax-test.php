@@ -15,7 +15,6 @@
 
 <div class="innerwrapper">
 
-<div class="still-here"><?php global $template; echo basename($template); ?></div>
 	
 			      <div class="content">
 				  
